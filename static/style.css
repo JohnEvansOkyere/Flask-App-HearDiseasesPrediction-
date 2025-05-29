@@ -1,0 +1,72 @@
+/* Center the form on the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 450px; /* Adjust width for more space */
+    height: auto;  /* Allow height to adjust with content */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Add margin below the header */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px; /* Slightly increase label font size */
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px; /* Increase padding for more height */
+    margin-bottom: 25px; /* Increase margin for more spacing between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size for better readability */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 12px; /* Adjust padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increase button font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-message {
+    margin-top: 30px; /* Increase margin for space between form and result */
+    font-size: 20px;  /* Make result text larger */
+    text-align: center;
+    color: #333;
+    padding: 15px; /* Add padding around the result box */
+    border-radius: 8px;
+    background-color: #e9ecef; /* Light background to make it stand out */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
