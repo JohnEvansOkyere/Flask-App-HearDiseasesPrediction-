@@ -1,72 +1,64 @@
-/* Center the form on the page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: auto;
+    min-height: 100vh;
 }
 
 .form-container {
-    background-color: #ffffff;
+    background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 450px; /* Adjust width for more space */
-    height: auto;  /* Allow height to adjust with content */
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px; /* Add margin below the header */
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #555;
-    font-size: 14px; /* Slightly increase label font size */
-}
-
-input[type="text"], input[type="number"] {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 12px; /* Increase padding for more height */
-    margin-bottom: 25px; /* Increase margin for more spacing between inputs */
-    border: 1px solid #ccc;
+    max-width: 500px;
+}
+
+/* Input improvements */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px; /* Increase font size for better readability */
+    font-size: 16px;
     box-sizing: border-box;
 }
 
+/* Result messages */
+.result-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.result-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.result-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Better button styling */
 button {
-    width: 100%;
     background-color: #28a745;
     color: white;
-    padding: 12px; /* Adjust padding for a larger button */
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; /* Increase button font size */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #218838;
 }
-
-.result-message {
-    margin-top: 30px; /* Increase margin for space between form and result */
-    font-size: 20px;  /* Make result text larger */
-    text-align: center;
-    color: #333;
-    padding: 15px; /* Add padding around the result box */
-    border-radius: 8px;
-    background-color: #e9ecef; /* Light background to make it stand out */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
